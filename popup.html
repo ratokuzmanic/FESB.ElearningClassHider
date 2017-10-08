@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FESB eLearning Class Hider</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="logo">
+            <img src="img/logo.png"/>         
+        </div>        
+        <div class="content">
+            <label>Popis kolegija koje želite sakriti iz navigacije, odvojeni točka-zarezom:</label>
+            <textarea id="listOfClasses" placeholder="Numerička analiza (250);Računalne mreže (120);Signali i sustavi (120)"></textarea>
+            <span>Nije važan poredak, velika i mala slova niti broj razmaka između riječi, no potreban je potpuni naziv kolegija na portalu uključujući oznaku studijskog programa (npr. 120).</span>
+            <button id="save">Spremi</button>
+            <button id="reset">Resetiraj</button>
+            <p id="status"></p>
+        </div>
+        <script src="js/save.js"></script>
+    </body>
+</html>

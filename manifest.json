@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "FESB eLearning Class Hider",
+    "version": "1.0",
+    "description": "Simple extension for hiding unwanted classes from FESB eLearning system",
+    "icons": { 
+        "16": "img/icons/16.png",
+        "32": "img/icons/32.png",
+        "48": "img/icons/48.png",
+        "128": "img/icons/128.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://elearning.fesb.unist.hr/*"],
+        "js": ["js/removeSelectedClasses.js"]
+    }],
+    "browser_action": {
+        "default_title": "FESB eLearning Class Hider",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
+    ]
+}

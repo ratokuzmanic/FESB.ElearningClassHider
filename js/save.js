@@ -18,7 +18,7 @@ load = () => {
 
 reset = () => {
     document.getElementById('listOfClasses').value = '';
-    chrome.storage.sync.set({listOfClasses: ''});
+    chrome.storage.sync.remove('listOfClasses');
 }
 
 document.addEventListener('DOMContentLoaded', load);
